@@ -39,6 +39,13 @@ synthesis:
     prefixedTags:
       tags.:
         ttl: PT4H
+  # Default SD-WAN 
+  - identifier: device_name
+    name: device_name
+    encodeIdentifierInGUID: true
+    conditions:
+    - attribute: provider
+      value: newRelic-SD-WAN-default
 
 goldenTags:
 - device_ip
